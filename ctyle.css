@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+.container{
+    max-width: 1000px ;
+    margin: auto;
+    padding: 100px 0;
+}
+.section-title{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.menu{
+    background-color: black;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.menu-links{
+    float: right;
+}
+.menu-link{
+text-decoration: none;
+color: white;
+line-height: 70px;
+margin-right: 10px;
+}
+.menu img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.menu-link:hover{
+    color: orange;
+}
+
+
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( #DB7E7E , #FFC997);
+    position: relative;
+    overflow: hidden;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.circle-bordered{
+    position: absolute;
+    bottom: -25px;
+    left: 200px;
+}
+.circle-dashed-border{
+    position: absolute;
+    width: 300px;
+    right: -100px;
+    bottom: -100px;
+    animation:rotate 7s linear infinite;
+}
+.circle1{
+    position: absolute;
+    top: -100px;
+    left: -100px;
+}
+
+.circle2{
+    position: absolute;
+    right: 0px;
+}
+.circle3{
+    position: absolute;
+    bottom: -50px;
+    width: 300px;
+}
+.octagon{
+    position: absolute;
+    bottom: 100px;
+    left: 700px;
+    animation:octagon-move 5s linear infinite ;
+}
+.triangle{
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    animation: triangle-move 5s linear infinite;
+}
+.header h1{
+color: white;
+text-shadow: 5px 5px 8px brown;
+font-size: 50px;
+text-align: center;
+}
+.header-link{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.header-link:hover{
+    box-shadow: 0 0 10px orange;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+.doing{
+    background: linear-gradient(7deg, #DB7E7E 18.07%, #FFC997 70%, #FFFFFF 70%);
+}
+.doing-left{
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+.doing-right{
+    width: 49%;
+    display: inline-block;
+}
+.doing-right img{
+    width: 100%;
+}
+.doing-left p{
+    color: black;
+    background-color: white;
+    box-shadow: 10px 10px 5px brown  ;
+    border-radius: 10px;
+    padding: 20px;
+    width: 85%;
+    margin: auto;
+}
+
+
+
+
+
+.service{
+ background: linear-gradient(340.62deg, #FFFFFF 45.63%, #DB7F7E 45.64%);;
+ text-align: center;
+}
+.service-card{
+width: 25%;
+display: inline-block;
+border: 5px solid orange;
+border-radius: 20px;
+background-color: white;
+padding: 10px;
+margin: 20px;
+vertical-align: top;
+padding: 30px 10px;
+}
+.service-title{
+    color: white;
+}
+
+
+
+
+
+
+
+
+.jobs{
+background-color: white;
+text-align: center;
+}
+.jobs-card{
+    width: 49%;
+    height: 100px;
+    display: inline-block;
+    border: 5px solid orange;
+    border-radius: 10px ;
+    height: 200px;
+}
+
+
+.jobs1{
+    background: url(img/portfolio/site1.png)center/cover no-repeat;
+}
+.jobs2{
+    background: url(img/portfolio/site2.png)center/cover no-repeat;
+}
+.jobs3{
+    background: url(img/portfolio/site3.png)center/cover no-repeat;
+}
+.jobs4{
+    background: url(img/portfolio/site4.png)center/cover no-repeat;
+}
+
+
+
+
+
+
+.good-card{
+    border: 5px solid #DB7E7E;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 1px salmon;
+    width: 500px;
+    margin: 20px auto;
+    background-color: white;
+}
+.good{
+    position: relative;
+}
+.advantages_bg_1{
+    position: absolute;
+    right: 0px;
+    width: 500px;
+    top: 100px;
+}
+.advantages_bg_2{
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    width: 300px;
+}
+.good-card-1{
+    position: relative;
+    left: 100px;
+}
+.good-card-2{
+    position: relative;
+    right: 100px;
+}
+
+
+
+.write{
+    background: linear-gradient( #DB7E7E , #FFC997);
+}
+.write-link{
+text-decoration: none;
+background-color: white;
+margin-right: 10px;
+border: 10px;
+border-radius: 20px;
+padding: 10px;
+box-shadow: 5px 5px brown;
+margin:auto ;
+display: block;
+width: fit-content;
+}
+
+
+
+
+
+
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes triangle-move{
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(100px,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+
+}
+@keyframes octagon-move{
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(100px,100px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@media(max-width:900px){
+    .advantages_bg_1{
+        display: none;
+    }
+    .advantages_bg_2{
+        display: none;
+    }
+}
+@media(max-width:850px){
+.circle-dashed-border{
+    display: none;
+}
+.circle2{
+    display: none;
+}
+.octagon{
+    display: none;
+}
+.triangle{
+    display: none;
+}
+.about{
+    padding: 10px;
+}
+.service-card img{
+    width: 70%;
+}
+.good-card{
+    left: 0px;
+}
+}
+@media(max-width:750px){
+.menu{
+    height: fit-content;
+}
+}
+@media(max-width:680px){
+    .doing-left{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .doing-right{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+}
+@media(max-width:550px){
+    .menu-link{
+        line-height: 30px;
+        margin-right: 70px;
+    }
+    .service-card{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+    .jobs-card{
+        display: block;
+        margin: 10px auto;
+        width: 70%;
+    }
+}
+@media(max-width:450px){
+    .good-card{
+        width: 300px;
+    }
+    .menu-link{
+        margin-right:50px;
+    }
+}
